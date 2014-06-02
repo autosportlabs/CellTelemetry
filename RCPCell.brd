@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -133,11 +133,11 @@
 </layers>
 <board>
 <plain>
-<wire x1="99.822" y1="0" x2="86.487" y2="0" width="0" layer="20"/>
-<wire x1="86.487" y1="0" x2="86.487" y2="1.651" width="0" layer="20"/>
-<wire x1="86.487" y1="1.651" x2="79.629" y2="1.651" width="0" layer="20"/>
-<wire x1="79.629" y1="1.651" x2="79.629" y2="0" width="0" layer="20"/>
-<wire x1="79.629" y1="0" x2="43.18" y2="0" width="0" layer="20"/>
+<wire x1="99.822" y1="0" x2="87.503" y2="0" width="0" layer="20"/>
+<wire x1="87.503" y1="0" x2="87.503" y2="1.651" width="0" layer="20"/>
+<wire x1="87.503" y1="1.651" x2="78.613" y2="1.651" width="0" layer="20"/>
+<wire x1="78.613" y1="1.651" x2="78.613" y2="0" width="0" layer="20"/>
+<wire x1="78.613" y1="0" x2="43.18" y2="0" width="0" layer="20"/>
 <wire x1="43.18" y1="0" x2="43.18" y2="14.732" width="0" layer="20"/>
 <wire x1="43.18" y1="14.732" x2="13.97" y2="14.732" width="0" layer="20"/>
 <wire x1="13.97" y1="14.732" x2="13.97" y2="11.684" width="0" layer="20"/>
@@ -2566,7 +2566,7 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="R8" library="SparkFun" package="0603" value="180" x="76.454" y="2.54" smashed="yes" rot="R180">
-<attribute name="NAME" x="78.105" y="0.762" size="0.8128" layer="25" font="vector"/>
+<attribute name="NAME" x="75.819" y="0.508" size="0.8128" layer="25" font="vector"/>
 </element>
 <element name="NETLIGHT" library="LEDs" package="RIGHTANGLE_CML_5323F5" value="PANEL_LED" x="71.12" y="4.572" smashed="yes">
 <attribute name="NAME" x="66.675" y="8.509" size="1.27" layer="21" rot="R90"/>
@@ -2591,7 +2591,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="6.858" y="16.51" size="1.016" layer="25" rot="R270"/>
 </element>
 <element name="C7" library="rcl" package="C0603" value="0.1uf" x="76.962" y="5.08" smashed="yes" rot="R180">
-<attribute name="NAME" x="78.105" y="4.064" size="0.8128" layer="25" rot="R180"/>
+<attribute name="NAME" x="74.422" y="5.715" size="0.8128" layer="25" rot="R270"/>
 </element>
 <element name="R2" library="SparkFun" package="0603" value="27" x="60.452" y="35.7378" smashed="yes">
 <attribute name="NAME" x="56.769" y="35.9918" size="1.016" layer="25" font="vector"/>
@@ -2747,7 +2747,10 @@ design rules under a new name.</description>
 <signal name="STATUS">
 <contactref element="IC1" pad="52"/>
 <contactref element="NETLIGHT" pad="A"/>
-<wire x1="69.85" y1="6.223" x2="75.058" y2="7.927" width="0" layer="19" extent="1-1"/>
+<wire x1="75.058" y1="7.927" x2="74.349" y2="8.636" width="0.2032" layer="1"/>
+<wire x1="74.349" y1="8.636" x2="71.628" y2="8.636" width="0.2032" layer="1"/>
+<wire x1="71.628" y1="8.636" x2="69.85" y2="6.858" width="0.2032" layer="1"/>
+<wire x1="69.85" y1="6.858" x2="69.85" y2="6.223" width="0.2032" layer="1"/>
 </signal>
 <signal name="SIM_VDD">
 <contactref element="IC1" pad="30"/>
@@ -2826,7 +2829,10 @@ design rules under a new name.</description>
 <signal name="N$1">
 <contactref element="R8" pad="2"/>
 <contactref element="NETLIGHT" pad="C"/>
-<wire x1="72.39" y1="6.223" x2="75.604" y2="2.54" width="0" layer="19" extent="1-1"/>
+<wire x1="72.39" y1="6.223" x2="74.422" y2="4.191" width="0.2032" layer="1"/>
+<wire x1="74.422" y1="4.191" x2="74.422" y2="2.794" width="0.2032" layer="1"/>
+<wire x1="74.422" y1="2.794" x2="74.676" y2="2.54" width="0.2032" layer="1"/>
+<wire x1="74.676" y1="2.54" x2="75.604" y2="2.54" width="0.2032" layer="1"/>
 </signal>
 </signals>
 </board>
