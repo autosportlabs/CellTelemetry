@@ -147,7 +147,7 @@
 <wire x1="99.822" y1="44.45" x2="99.822" y2="0" width="0" layer="20"/>
 <text x="58.039" y="43.18" size="1.27" layer="21" font="vector" rot="R180">autosportlabs.net</text>
 <text x="98.552" y="43.18" size="1.27" layer="21" font="vector" rot="R180">Copyright 2012-2014 Autosport Labs</text>
-<text x="21.082" y="14.7281" size="1.27" layer="21" font="vector">Rev C</text>
+<text x="16.002" y="38.0961" size="1.27" layer="21" font="vector">Rev C</text>
 <text x="7.3152" y="40.386" size="1.27" layer="21" font="vector">Cell Telemetry</text>
 <rectangle x1="18.4442" y1="42.4422" x2="25.5308" y2="42.4548" layer="21"/>
 <rectangle x1="18.4442" y1="42.4549" x2="25.5308" y2="42.4675" layer="21"/>
