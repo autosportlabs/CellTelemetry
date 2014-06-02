@@ -9662,7 +9662,6 @@ Metric Code Size 5664</description>
 <part name="GND62" library="supply1" deviceset="GND" device=""/>
 <part name="P+16" library="supply2" deviceset="V+" device=""/>
 <part name="C10" library="rcl" deviceset="CPOL-US" device="SMCD" value="47uF"/>
-<part name="P+27" library="supply1" deviceset="+5V" device=""/>
 <part name="AD70" library="supply2" deviceset="V--&gt;" device="" value=""/>
 <part name="AD72" library="supply2" deviceset="V--&gt;" device="" value=""/>
 <part name="AD74" library="supply2" deviceset="V--&gt;" device="" value=""/>
@@ -11675,9 +11674,6 @@ Metric Code Size 5664</description>
 <instance part="GND62" gate="1" x="104.14" y="7.62"/>
 <instance part="P+16" gate="1" x="175.26" y="63.5"/>
 <instance part="C10" gate="G$1" x="175.26" y="33.02"/>
-<instance part="P+27" gate="1" x="76.2" y="63.5" smashed="yes">
-<attribute name="VALUE" x="73.66" y="58.42" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="AD70" gate="G$1" x="68.834" y="-12.7" smashed="yes">
 <attribute name="VALUE" x="70.104" y="-13.462" size="1.778" layer="96"/>
 </instance>
@@ -11995,14 +11991,6 @@ Metric Code Size 5664</description>
 </net>
 <net name="+5V" class="0">
 <segment>
-<wire x1="76.2" y1="45.72" x2="96.52" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="45.72" x2="76.2" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="45.72" x2="76.2" y2="22.86" width="0.1524" layer="91"/>
-<junction x="76.2" y="45.72"/>
-<pinref part="P+27" gate="1" pin="+5V"/>
-<pinref part="C11" gate="G$1" pin="+"/>
-</segment>
-<segment>
 <pinref part="EX2" gate="1" pin="3"/>
 <wire x1="-177.8" y1="104.14" x2="-154.94" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="-154.94" y1="104.14" x2="-154.94" y2="106.68" width="0.1524" layer="91"/>
@@ -12175,6 +12163,18 @@ Metric Code Size 5664</description>
 <pinref part="EX2" gate="1" pin="5"/>
 <wire x1="-177.8" y1="109.22" x2="-170.18" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="-170.18" y1="109.22" x2="-170.18" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="76.2" y1="45.72" x2="88.9" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="45.72" x2="96.52" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="45.72" x2="76.2" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="45.72" x2="76.2" y2="22.86" width="0.1524" layer="91"/>
+<junction x="76.2" y="45.72"/>
+<pinref part="C11" gate="G$1" pin="+"/>
+<label x="76.2" y="63.5" size="1.778" layer="95" rot="R90"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="88.9" y1="22.86" x2="88.9" y2="45.72" width="0.1524" layer="91"/>
+<junction x="88.9" y="45.72"/>
 </segment>
 </net>
 <net name="TXD3" class="0">
