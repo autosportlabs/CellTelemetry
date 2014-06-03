@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11792,15 +11792,12 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
 <part name="NETLIGHT" library="LEDs" deviceset="PANEL_LED" device=""/>
 <part name="C10" library="rcl" deviceset="CPOL-US" device="SMCD" value="47uF"/>
-<part name="AD74" library="supply2" deviceset="V--&gt;" device="" value=""/>
-<part name="AD76" library="supply2" deviceset="V--&gt;" device="" value=""/>
 <part name="C12" library="rcl" deviceset="C-US" device="C0603" value="0.1uf"/>
 <part name="IC1" library="sim900" deviceset="SIM900" device=""/>
 <part name="AD3" library="supply2" deviceset="V--&gt;" device="" value=""/>
 <part name="AD4" library="supply2" deviceset="V--&gt;" device="" value=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="AD5" library="supply2" deviceset="V--&gt;" device="" value=""/>
-<part name="AD6" library="supply2" deviceset="V--&gt;" device="" value=""/>
 <part name="AD7" library="supply2" deviceset="V--&gt;" device="" value=""/>
 <part name="C9" library="rcl" deviceset="CPOL-US" device="SMCD" value="47uF"/>
 <part name="C8" library="rcl" deviceset="CPOL-US" device="SMCD" value="47uF"/>
@@ -11832,7 +11829,6 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <part name="AD54" library="supply2" deviceset="V--&gt;" device="" value=""/>
 <part name="AD137" library="supply2" deviceset="V--&gt;" device="" value=""/>
 <part name="AD151" library="supply2" deviceset="V--&gt;" device="" value=""/>
-<part name="P+37" library="supply1" deviceset="+5V" device=""/>
 <part name="GND82" library="supply1" deviceset="GND" device=""/>
 <part name="GND83" library="supply1" deviceset="GND" device=""/>
 <part name="AD156" library="supply2" deviceset="V--&gt;" device="" value=""/>
@@ -11851,6 +11847,9 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <part name="P+1" library="supply1" deviceset="+5V" device="" value="+4.5V"/>
 <part name="P+2" library="supply1" deviceset="+5V" device="" value="+6V"/>
 <part name="C2" library="rcl" deviceset="CPOL-US" device="SMCD" value="47uF"/>
+<part name="AD1" library="supply2" deviceset="V--&gt;" device="" value=""/>
+<part name="R4" library="SparkFun" deviceset="RESISTOR" device="0603" value="1k"/>
+<part name="AD2" library="supply2" deviceset="V--&gt;" device="" value=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11859,7 +11858,7 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <text x="200.66" y="177.8" size="6.4516" layer="97" rot="R180">Copyright 2012-2014 Autosport Labs</text>
 <text x="200.66" y="190.5" size="6.4516" layer="97" rot="R180">RaceCapture Cell Telemetry</text>
 <text x="113.03" y="201.803" size="6.4516" layer="97" font="vector">autosportlabs.com</text>
-<text x="195.326" y="-34.544" size="3.81" layer="97" ratio="5">B</text>
+<text x="195.326" y="-34.544" size="3.81" layer="97" ratio="5">C</text>
 <rectangle x1="132.2705" y1="210.8835" x2="203.1365" y2="211.0105" layer="97"/>
 <rectangle x1="132.2705" y1="211.0105" x2="203.1365" y2="211.1375" layer="97"/>
 <rectangle x1="132.2705" y1="211.1375" x2="203.1365" y2="211.2645" layer="97"/>
@@ -13812,12 +13811,6 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <instance part="GND4" gate="1" x="-187.96" y="-22.86"/>
 <instance part="NETLIGHT" gate="G$1" x="-187.96" y="9.144"/>
 <instance part="C10" gate="G$1" x="13.462" y="35.56"/>
-<instance part="AD74" gate="G$1" x="27.686" y="-12.7" smashed="yes" rot="R180">
-<attribute name="VALUE" x="26.416" y="-11.938" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="AD76" gate="G$1" x="27.686" y="-17.78" smashed="yes" rot="R180">
-<attribute name="VALUE" x="26.416" y="-17.018" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="C12" gate="G$1" x="-41.91" y="60.96" smashed="yes">
 <attribute name="NAME" x="-35.306" y="62.865" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-32.766" y="60.071" size="1.778" layer="96" rot="R180"/>
@@ -13848,11 +13841,8 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <attribute name="VALUE" x="-151.384" y="130.302" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND2" gate="1" x="-127" y="170.18"/>
-<instance part="AD5" gate="G$1" x="-45.974" y="-17.78" smashed="yes" rot="R180">
-<attribute name="VALUE" x="-47.244" y="-17.018" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="AD6" gate="G$1" x="-150.114" y="147.32" smashed="yes" rot="R180">
-<attribute name="VALUE" x="-151.384" y="148.082" size="1.778" layer="96" rot="R180"/>
+<instance part="AD5" gate="G$1" x="-17.272" y="-18.542" smashed="yes">
+<attribute name="VALUE" x="-16.002" y="-19.304" size="1.778" layer="96"/>
 </instance>
 <instance part="AD7" gate="G$1" x="-150.114" y="149.86" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-151.384" y="150.622" size="1.778" layer="96" rot="R180"/>
@@ -13920,9 +13910,6 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <instance part="AD151" gate="G$1" x="-98.806" y="-2.54" smashed="yes">
 <attribute name="VALUE" x="-97.536" y="-3.302" size="1.778" layer="96"/>
 </instance>
-<instance part="P+37" gate="1" x="-134.62" y="12.7" smashed="yes">
-<attribute name="VALUE" x="-129.032" y="13.716" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="GND82" gate="1" x="-99.06" y="-17.78"/>
 <instance part="GND83" gate="1" x="-149.86" y="-17.78"/>
 <instance part="AD156" gate="G$1" x="-149.733" y="9.6266" smashed="yes" rot="R90">
@@ -13969,6 +13956,13 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <attribute name="VALUE" x="76.962" y="53.721" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C2" gate="G$1" x="-27.94" y="60.96"/>
+<instance part="AD1" gate="G$1" x="-98.806" y="-5.08" smashed="yes">
+<attribute name="VALUE" x="-97.536" y="-5.842" size="1.778" layer="96"/>
+</instance>
+<instance part="R4" gate="G$1" x="-33.782" y="-18.542" rot="R180"/>
+<instance part="AD2" gate="G$1" x="-48.006" y="-18.542" smashed="yes" rot="R180">
+<attribute name="VALUE" x="-49.276" y="-17.78" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -14125,24 +14119,26 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 </net>
 <net name="DIN" class="0">
 <segment>
-<wire x1="33.02" y1="-17.78" x2="27.94" y2="-17.78" width="0.1524" layer="91"/>
-<label x="20.828" y="-18.542" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="-137.16" y1="127" x2="-149.86" y2="127" width="0.1524" layer="91"/>
 <label x="-150.622" y="127.762" size="1.778" layer="95" rot="R180"/>
 <pinref part="IC1" gate="G$1" pin="RXD"/>
 </segment>
+<segment>
+<pinref part="EX1" gate="1" pin="5"/>
+<wire x1="-106.68" y1="2.54" x2="-99.06" y2="2.54" width="0.1524" layer="91"/>
+<label x="-98.298" y="1.778" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="DOUT" class="0">
-<segment>
-<wire x1="33.02" y1="-12.7" x2="27.94" y2="-12.7" width="0.1524" layer="91"/>
-<label x="20.828" y="-13.462" size="1.778" layer="95"/>
-</segment>
 <segment>
 <wire x1="-137.16" y1="129.54" x2="-149.86" y2="129.54" width="0.1524" layer="91"/>
 <label x="-150.622" y="130.302" size="1.778" layer="95" rot="R180"/>
 <pinref part="IC1" gate="G$1" pin="TXD"/>
+</segment>
+<segment>
+<pinref part="EX1" gate="1" pin="6"/>
+<wire x1="-106.68" y1="5.08" x2="-99.06" y2="5.08" width="0.1524" layer="91"/>
+<label x="-98.298" y="4.318" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="V+" class="1">
@@ -14179,18 +14175,6 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <junction x="26.162" y="53.34"/>
 </segment>
 </net>
-<net name="+5V" class="0">
-<segment>
-<pinref part="EX2" gate="1" pin="3"/>
-<wire x1="-157.48" y1="-2.54" x2="-134.62" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="-134.62" y1="-2.54" x2="-134.62" y2="0" width="0.1524" layer="91"/>
-<pinref part="P+37" gate="1" pin="+5V"/>
-<pinref part="EX2" gate="1" pin="4"/>
-<wire x1="-134.62" y1="0" x2="-134.62" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="-157.48" y1="0" x2="-134.62" y2="0" width="0.1524" layer="91"/>
-<junction x="-134.62" y="0"/>
-</segment>
-</net>
 <net name="RF_ANT" class="0">
 <segment>
 <wire x1="-96.52" y1="170.18" x2="-96.52" y2="187.96" width="0.1524" layer="91"/>
@@ -14206,15 +14190,9 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <pinref part="IC1" gate="G$1" pin="PWRKEY"/>
 </segment>
 <segment>
-<wire x1="-15.24" y1="-17.78" x2="-45.72" y2="-17.78" width="0.1524" layer="91"/>
-<label x="-45.974" y="-16.764" size="1.778" layer="95" rot="R180"/>
-</segment>
-</net>
-<net name="PWRKEY_OUT" class="0">
-<segment>
-<wire x1="-137.16" y1="147.32" x2="-149.86" y2="147.32" width="0.1524" layer="91"/>
-<label x="-150.876" y="148.336" size="1.778" layer="95" rot="R180"/>
-<pinref part="IC1" gate="G$1" pin="PWRKEY_OUT"/>
+<wire x1="-28.702" y1="-18.542" x2="-17.526" y2="-18.542" width="0.1524" layer="91"/>
+<label x="-17.272" y="-19.558" size="1.778" layer="95"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="STATUS" class="0">
@@ -14351,20 +14329,6 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <junction x="-41.91" y="81.28"/>
 </segment>
 </net>
-<net name="TXD3" class="0">
-<segment>
-<pinref part="EX1" gate="1" pin="5"/>
-<wire x1="-106.68" y1="2.54" x2="-99.06" y2="2.54" width="0.1524" layer="91"/>
-<label x="-98.298" y="1.778" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RXD3" class="0">
-<segment>
-<pinref part="EX1" gate="1" pin="6"/>
-<wire x1="-106.68" y1="5.08" x2="-99.06" y2="5.08" width="0.1524" layer="91"/>
-<label x="-98.298" y="4.318" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="USB_DM_HS_OUT" class="0">
 <segment>
 <pinref part="EX1" gate="1" pin="3"/>
@@ -14450,6 +14414,18 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <pinref part="R50" gate="G$1" pin="1"/>
 <pinref part="P+2" gate="1" pin="+5V"/>
 <wire x1="79.502" y1="56.261" x2="79.502" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="EXT_CTRL" class="0">
+<segment>
+<pinref part="EX1" gate="1" pin="2"/>
+<wire x1="-106.68" y1="-5.08" x2="-99.06" y2="-5.08" width="0.1524" layer="91"/>
+<label x="-98.298" y="-5.842" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="-38.862" y1="-18.542" x2="-48.006" y2="-18.542" width="0.1524" layer="91"/>
+<label x="-48.514" y="-17.526" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>
