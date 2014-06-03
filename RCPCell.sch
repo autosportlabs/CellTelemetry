@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11837,7 +11837,7 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="D25" library="smt_diodes" deviceset="SCHOTTKY" device=""/>
 <part name="R50" library="rcl" deviceset="R-US_" device="R0603" value="24K 1%"/>
-<part name="R51" library="rcl" deviceset="R-US_" device="R0603" value="2.43K 1%"/>
+<part name="R51" library="rcl" deviceset="R-US_" device="R0603" value="3.9K 1%"/>
 <part name="U7" library="voltage_regulators" deviceset="FAN8303" device=""/>
 <part name="C39" library="rcl" deviceset="C-US" device="C0603" value="0.01uF"/>
 <part name="R49" library="rcl" deviceset="R-US_" device="R0603" value="43K"/>
@@ -13967,7 +13967,7 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="N$2" class="0">
 <segment>
 <wire x1="-208.28" y1="213.36" x2="-200.66" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="-200.66" y1="213.36" x2="-193.04" y2="213.36" width="0.1524" layer="91"/>
