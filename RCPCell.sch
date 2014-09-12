@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11640,12 +11640,12 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 </device>
 <device name="2" package="MOLEX_91228-3001">
 <connects>
-<connect gate="G$1" pin="CLK" pad="6"/>
-<connect gate="G$1" pin="GND" pad="3"/>
-<connect gate="G$1" pin="I/O" pad="1"/>
-<connect gate="G$1" pin="RST" pad="5"/>
-<connect gate="G$1" pin="VCC" pad="4"/>
-<connect gate="G$1" pin="VPP" pad="2"/>
+<connect gate="G$1" pin="CLK" pad="3"/>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="I/O" pad="4"/>
+<connect gate="G$1" pin="RST" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+<connect gate="G$1" pin="VPP" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -11793,7 +11793,7 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <part name="NETLIGHT" library="LEDs" deviceset="PANEL_LED" device=""/>
 <part name="C10" library="rcl" deviceset="CPOL-US" device="SMCD" value="47uF"/>
 <part name="C12" library="rcl" deviceset="C-US" device="C0603" value="0.1uf"/>
-<part name="IC1" library="sim900" deviceset="SIM900" device=""/>
+<part name="SIM900" library="sim900" deviceset="SIM900" device=""/>
 <part name="AD3" library="supply2" deviceset="V--&gt;" device="" value=""/>
 <part name="AD4" library="supply2" deviceset="V--&gt;" device="" value=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
@@ -11846,10 +11846,10 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <part name="L3" library="sumida_inductors" deviceset="CD54" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device="" value="+4.5V"/>
 <part name="P+2" library="supply1" deviceset="+5V" device="" value="V+"/>
-<part name="C2" library="rcl" deviceset="CPOL-US" device="SMCD" value="47uF"/>
 <part name="AD1" library="supply2" deviceset="V--&gt;" device="" value=""/>
 <part name="R4" library="SparkFun" deviceset="RESISTOR" device="0603" value="1k"/>
 <part name="AD2" library="supply2" deviceset="V--&gt;" device="" value=""/>
+<part name="C43" library="rcl" deviceset="CPOL-US" device="153CLV-0605" value="22uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -13815,25 +13815,25 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <attribute name="NAME" x="-35.306" y="62.865" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-32.766" y="60.071" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="IC1" gate="G$1" x="-96.52" y="129.54"/>
-<instance part="IC1" gate="GND@1" x="-116.84" y="213.36"/>
-<instance part="IC1" gate="GND@2" x="-109.22" y="213.36"/>
-<instance part="IC1" gate="GND@3" x="-101.6" y="213.36"/>
-<instance part="IC1" gate="GND@4" x="-208.28" y="213.36"/>
-<instance part="IC1" gate="GND@5" x="-200.66" y="213.36"/>
-<instance part="IC1" gate="GND@6" x="-193.04" y="213.36"/>
-<instance part="IC1" gate="GND@7" x="-185.42" y="213.36"/>
-<instance part="IC1" gate="GND@8" x="-177.8" y="213.36"/>
-<instance part="IC1" gate="GND@9" x="-170.18" y="213.36"/>
-<instance part="IC1" gate="GND@10" x="-162.56" y="213.36"/>
-<instance part="IC1" gate="GND@11" x="-154.94" y="213.36"/>
-<instance part="IC1" gate="GND@12" x="-147.32" y="213.36"/>
-<instance part="IC1" gate="GND@13" x="-139.7" y="213.36"/>
-<instance part="IC1" gate="GND@14" x="-132.08" y="213.36"/>
-<instance part="IC1" gate="GND@15" x="-124.46" y="213.36"/>
-<instance part="IC1" gate="VBAT@1" x="-91.44" y="213.36" rot="R270"/>
-<instance part="IC1" gate="VBAT@2" x="-83.82" y="213.36" rot="R270"/>
-<instance part="IC1" gate="VBAT@3" x="-76.2" y="213.36" rot="R270"/>
+<instance part="SIM900" gate="G$1" x="-96.52" y="129.54"/>
+<instance part="SIM900" gate="GND@1" x="-116.84" y="213.36"/>
+<instance part="SIM900" gate="GND@2" x="-109.22" y="213.36"/>
+<instance part="SIM900" gate="GND@3" x="-101.6" y="213.36"/>
+<instance part="SIM900" gate="GND@4" x="-208.28" y="213.36"/>
+<instance part="SIM900" gate="GND@5" x="-200.66" y="213.36"/>
+<instance part="SIM900" gate="GND@6" x="-193.04" y="213.36"/>
+<instance part="SIM900" gate="GND@7" x="-185.42" y="213.36"/>
+<instance part="SIM900" gate="GND@8" x="-177.8" y="213.36"/>
+<instance part="SIM900" gate="GND@9" x="-170.18" y="213.36"/>
+<instance part="SIM900" gate="GND@10" x="-162.56" y="213.36"/>
+<instance part="SIM900" gate="GND@11" x="-154.94" y="213.36"/>
+<instance part="SIM900" gate="GND@12" x="-147.32" y="213.36"/>
+<instance part="SIM900" gate="GND@13" x="-139.7" y="213.36"/>
+<instance part="SIM900" gate="GND@14" x="-132.08" y="213.36"/>
+<instance part="SIM900" gate="GND@15" x="-124.46" y="213.36"/>
+<instance part="SIM900" gate="VBAT@1" x="-91.44" y="213.36" rot="R270"/>
+<instance part="SIM900" gate="VBAT@2" x="-83.82" y="213.36" rot="R270"/>
+<instance part="SIM900" gate="VBAT@3" x="-76.2" y="213.36" rot="R270"/>
 <instance part="AD3" gate="G$1" x="-150.114" y="127" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-151.384" y="127.762" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -13886,9 +13886,9 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <instance part="R2" gate="G$1" x="170.18" y="139.7"/>
 <instance part="R3" gate="G$1" x="81.28" y="137.16"/>
 <instance part="R1" gate="G$1" x="88.9" y="142.24"/>
-<instance part="C1" gate="G$1" x="104.14" y="157.48" smashed="yes">
-<attribute name="NAME" x="110.744" y="159.385" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="113.284" y="156.591" size="1.778" layer="96" rot="R180"/>
+<instance part="C1" gate="G$1" x="104.14" y="160.02" smashed="yes">
+<attribute name="NAME" x="110.744" y="161.925" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="113.284" y="159.131" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND9" gate="1" x="104.14" y="149.86"/>
 <instance part="AD10" gate="G$1" x="-76.2" y="180.594" smashed="yes" rot="R90">
@@ -13955,7 +13955,6 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <instance part="P+2" gate="1" x="79.502" y="58.801" smashed="yes">
 <attribute name="VALUE" x="78.359" y="59.182" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C2" gate="G$1" x="-27.94" y="60.96"/>
 <instance part="AD1" gate="G$1" x="-98.806" y="-5.08" smashed="yes">
 <attribute name="VALUE" x="-97.536" y="-5.842" size="1.778" layer="96"/>
 </instance>
@@ -13963,120 +13962,16 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <instance part="AD2" gate="G$1" x="-48.006" y="-18.542" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-49.276" y="-17.78" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="C43" gate="G$1" x="-27.94" y="60.96"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$2" class="0">
-<segment>
-<wire x1="-208.28" y1="213.36" x2="-200.66" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="-200.66" y1="213.36" x2="-193.04" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="-193.04" y1="213.36" x2="-185.42" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="-185.42" y1="213.36" x2="-177.8" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="-177.8" y1="213.36" x2="-170.18" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="-170.18" y1="213.36" x2="-162.56" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="-162.56" y1="213.36" x2="-154.94" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="-154.94" y1="213.36" x2="-147.32" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="-147.32" y1="213.36" x2="-139.7" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="-139.7" y1="213.36" x2="-132.08" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="-132.08" y1="213.36" x2="-124.46" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="-124.46" y1="213.36" x2="-116.84" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="-116.84" y1="213.36" x2="-109.22" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="-109.22" y1="213.36" x2="-101.6" y2="213.36" width="0.1524" layer="91"/>
-<junction x="-193.04" y="213.36"/>
-<junction x="-185.42" y="213.36"/>
-<junction x="-177.8" y="213.36"/>
-<junction x="-170.18" y="213.36"/>
-<junction x="-162.56" y="213.36"/>
-<junction x="-154.94" y="213.36"/>
-<junction x="-147.32" y="213.36"/>
-<junction x="-139.7" y="213.36"/>
-<junction x="-132.08" y="213.36"/>
-<junction x="-124.46" y="213.36"/>
-<junction x="-116.84" y="213.36"/>
-<junction x="-109.22" y="213.36"/>
-<junction x="-200.66" y="213.36"/>
-<pinref part="IC1" gate="GND@6" pin="GND"/>
-<pinref part="IC1" gate="GND@7" pin="GND"/>
-<pinref part="IC1" gate="GND@8" pin="GND"/>
-<pinref part="IC1" gate="GND@9" pin="GND"/>
-<pinref part="IC1" gate="GND@10" pin="GND"/>
-<pinref part="IC1" gate="GND@11" pin="GND"/>
-<pinref part="IC1" gate="GND@12" pin="GND"/>
-<pinref part="IC1" gate="GND@13" pin="GND"/>
-<pinref part="IC1" gate="GND@14" pin="GND"/>
-<pinref part="IC1" gate="GND@15" pin="GND"/>
-<pinref part="IC1" gate="GND@1" pin="GND"/>
-<pinref part="IC1" gate="GND@2" pin="GND"/>
-<pinref part="IC1" gate="GND@3" pin="GND"/>
-<pinref part="IC1" gate="GND@5" pin="GND"/>
-<pinref part="IC1" gate="GND@4" pin="GND"/>
-<pinref part="GND6" gate="1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="149.86" y1="144.78" x2="203.2" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="144.78" x2="203.2" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="GND7" gate="1" pin="GND"/>
-<pinref part="U$1" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="104.14" y1="99.06" x2="104.14" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="GND8" gate="1" pin="GND"/>
-<pinref part="U1" gate="G$1" pin="5"/>
-</segment>
-<segment>
-<pinref part="C1" gate="G$1" pin="2"/>
-<pinref part="GND9" gate="1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="111.76" y1="99.06" x2="111.76" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="2"/>
-<pinref part="GND10" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="EX1" gate="1" pin="1"/>
-<wire x1="-106.68" y1="-7.62" x2="-99.06" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="-99.06" y1="-7.62" x2="-99.06" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="GND82" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="EX2" gate="1" pin="1"/>
-<wire x1="-157.48" y1="-7.62" x2="-149.86" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="-149.86" y1="-7.62" x2="-149.86" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="EX2" gate="1" pin="2"/>
-<wire x1="-157.48" y1="-5.08" x2="-149.86" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="-149.86" y1="-5.08" x2="-149.86" y2="-7.62" width="0.1524" layer="91"/>
-<junction x="-149.86" y="-7.62"/>
-<pinref part="GND83" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="GND2" gate="1" pin="GND"/>
-<pinref part="J$1" gate="1" pin="GND@3"/>
-<wire x1="-127" y1="172.72" x2="-127" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="-127" y1="175.26" x2="-121.92" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="J$1" gate="1" pin="GND@2"/>
-<wire x1="-121.92" y1="177.8" x2="-127" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="-127" y1="177.8" x2="-127" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="J$1" gate="1" pin="GND@1"/>
-<wire x1="-121.92" y1="180.34" x2="-127" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="-127" y1="180.34" x2="-127" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="J$1" gate="1" pin="GND@0"/>
-<wire x1="-121.92" y1="182.88" x2="-127" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="-127" y1="182.88" x2="-127" y2="180.34" width="0.1524" layer="91"/>
-<junction x="-127" y="180.34"/>
-<junction x="-127" y="177.8"/>
-</segment>
-<segment>
-<pinref part="R8" gate="G$1" pin="1"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="-187.96" y1="-20.32" x2="-187.96" y2="-7.62" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="DIN" class="0">
 <segment>
 <wire x1="-137.16" y1="127" x2="-149.86" y2="127" width="0.1524" layer="91"/>
 <label x="-150.622" y="127.762" size="1.778" layer="95" rot="R180"/>
-<pinref part="IC1" gate="G$1" pin="RXD"/>
+<pinref part="SIM900" gate="G$1" pin="RXD"/>
 </segment>
 <segment>
 <pinref part="EX1" gate="1" pin="5"/>
@@ -14088,7 +13983,7 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <segment>
 <wire x1="-137.16" y1="129.54" x2="-149.86" y2="129.54" width="0.1524" layer="91"/>
 <label x="-150.622" y="130.302" size="1.778" layer="95" rot="R180"/>
-<pinref part="IC1" gate="G$1" pin="TXD"/>
+<pinref part="SIM900" gate="G$1" pin="TXD"/>
 </segment>
 <segment>
 <pinref part="EX1" gate="1" pin="6"/>
@@ -14096,16 +13991,16 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <label x="-98.298" y="4.318" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="V+" class="1">
+<net name="V+" class="0">
 <segment>
 <wire x1="-91.44" y1="213.36" x2="-83.82" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="-83.82" y1="213.36" x2="-76.2" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="-76.2" y1="213.36" x2="-76.2" y2="218.44" width="0.1524" layer="91"/>
 <junction x="-83.82" y="213.36"/>
-<pinref part="IC1" gate="VBAT@1" pin="VBAT"/>
-<pinref part="IC1" gate="VBAT@3" pin="VBAT"/>
+<pinref part="SIM900" gate="VBAT@1" pin="VBAT"/>
+<pinref part="SIM900" gate="VBAT@3" pin="VBAT"/>
 <pinref part="V+" gate="1" pin="V+"/>
-<pinref part="IC1" gate="VBAT@2" pin="VBAT"/>
+<pinref part="SIM900" gate="VBAT@2" pin="VBAT"/>
 </segment>
 <segment>
 <pinref part="L3" gate="G$1" pin="1"/>
@@ -14139,7 +14034,7 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <segment>
 <wire x1="-96.52" y1="170.18" x2="-96.52" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="-96.52" y1="187.96" x2="-114.3" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="RF_ANT"/>
+<pinref part="SIM900" gate="G$1" pin="RF_ANT"/>
 <pinref part="J$1" gate="1" pin="SIGNAL"/>
 </segment>
 </net>
@@ -14147,7 +14042,7 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <segment>
 <wire x1="-137.16" y1="149.86" x2="-149.86" y2="149.86" width="0.1524" layer="91"/>
 <label x="-150.876" y="150.622" size="1.778" layer="95" rot="R180"/>
-<pinref part="IC1" gate="G$1" pin="PWRKEY"/>
+<pinref part="SIM900" gate="G$1" pin="PWRKEY"/>
 </segment>
 <segment>
 <wire x1="-28.702" y1="-18.542" x2="-17.526" y2="-18.542" width="0.1524" layer="91"/>
@@ -14165,14 +14060,14 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <segment>
 <wire x1="-76.2" y1="170.18" x2="-76.2" y2="180.34" width="0.1524" layer="91"/>
 <label x="-75.184" y="180.848" size="1.778" layer="95" rot="R90"/>
-<pinref part="IC1" gate="G$1" pin="NETLIGHT\"/>
+<pinref part="SIM900" gate="G$1" pin="NETLIGHT\"/>
 </segment>
 </net>
 <net name="SIM_VDD" class="0">
 <segment>
 <wire x1="-86.36" y1="88.9" x2="-86.36" y2="83.82" width="0.1524" layer="91"/>
 <label x="-87.376" y="83.058" size="1.778" layer="95" rot="R270"/>
-<pinref part="IC1" gate="G$1" pin="SIM_VDD"/>
+<pinref part="SIM900" gate="G$1" pin="SIM_VDD"/>
 </segment>
 <segment>
 <wire x1="124.46" y1="144.78" x2="111.76" y2="144.78" width="0.1524" layer="91"/>
@@ -14180,7 +14075,7 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <wire x1="91.44" y1="144.78" x2="91.44" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="147.32" x2="78.74" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="147.32" x2="71.12" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="160.02" x2="104.14" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="162.56" x2="104.14" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="165.1" x2="78.74" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="165.1" x2="78.74" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="121.92" x2="111.76" y2="144.78" width="0.1524" layer="91"/>
@@ -14196,7 +14091,7 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <segment>
 <wire x1="-83.82" y1="88.9" x2="-83.82" y2="83.82" width="0.1524" layer="91"/>
 <label x="-84.836" y="83.058" size="1.778" layer="95" rot="R270"/>
-<pinref part="IC1" gate="G$1" pin="SIM_DATA"/>
+<pinref part="SIM900" gate="G$1" pin="SIM_DATA"/>
 </segment>
 <segment>
 <wire x1="175.26" y1="139.7" x2="182.88" y2="139.7" width="0.1524" layer="91"/>
@@ -14208,7 +14103,7 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <segment>
 <wire x1="-81.28" y1="88.9" x2="-81.28" y2="83.82" width="0.1524" layer="91"/>
 <label x="-82.296" y="83.058" size="1.778" layer="95" rot="R270"/>
-<pinref part="IC1" gate="G$1" pin="SIM_CLK"/>
+<pinref part="SIM900" gate="G$1" pin="SIM_CLK"/>
 </segment>
 <segment>
 <wire x1="76.2" y1="137.16" x2="71.12" y2="137.16" width="0.1524" layer="91"/>
@@ -14220,7 +14115,7 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <segment>
 <wire x1="-78.74" y1="88.9" x2="-78.74" y2="83.82" width="0.1524" layer="91"/>
 <label x="-79.756" y="83.058" size="1.778" layer="95" rot="R270"/>
-<pinref part="IC1" gate="G$1" pin="SIM_RST"/>
+<pinref part="SIM900" gate="G$1" pin="SIM_RST"/>
 </segment>
 <segment>
 <wire x1="83.82" y1="142.24" x2="71.12" y2="142.24" width="0.1524" layer="91"/>
@@ -14281,12 +14176,12 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <wire x1="-57.277" y1="81.28" x2="-41.91" y2="81.28" width="0.1524" layer="91"/>
 <label x="-56.134" y="81.788" size="1.778" layer="95"/>
 <pinref part="U7" gate="G$1" pin="VIN"/>
-<pinref part="C2" gate="G$1" pin="+"/>
 <wire x1="-41.91" y1="81.28" x2="-27.94" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="81.28" x2="64.262" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="63.5" x2="-27.94" y2="81.28" width="0.1524" layer="91"/>
 <junction x="-27.94" y="81.28"/>
 <junction x="-41.91" y="81.28"/>
+<pinref part="C43" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="USB_DM_HS_OUT" class="0">
@@ -14418,7 +14313,6 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <pinref part="C8" gate="G$1" pin="-"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 <junction x="13.462" y="15.24"/>
-<pinref part="C2" gate="G$1" pin="-"/>
 <wire x1="-27.94" y1="55.88" x2="-27.94" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="15.24" x2="-17.78" y2="15.24" width="0.1524" layer="91"/>
 <junction x="-17.78" y="15.24"/>
@@ -14426,6 +14320,111 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <wire x1="-41.91" y1="55.88" x2="-41.91" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="15.24" x2="-41.91" y2="15.24" width="0.1524" layer="91"/>
 <junction x="-27.94" y="15.24"/>
+<pinref part="C43" gate="G$1" pin="-"/>
+</segment>
+<segment>
+<wire x1="-208.28" y1="213.36" x2="-200.66" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="-200.66" y1="213.36" x2="-193.04" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="-193.04" y1="213.36" x2="-185.42" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="-185.42" y1="213.36" x2="-177.8" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="-177.8" y1="213.36" x2="-170.18" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="-170.18" y1="213.36" x2="-162.56" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="213.36" x2="-154.94" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="-154.94" y1="213.36" x2="-147.32" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="-147.32" y1="213.36" x2="-139.7" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="-139.7" y1="213.36" x2="-132.08" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="-132.08" y1="213.36" x2="-124.46" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="-124.46" y1="213.36" x2="-116.84" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="213.36" x2="-109.22" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="-109.22" y1="213.36" x2="-101.6" y2="213.36" width="0.1524" layer="91"/>
+<junction x="-193.04" y="213.36"/>
+<junction x="-185.42" y="213.36"/>
+<junction x="-177.8" y="213.36"/>
+<junction x="-170.18" y="213.36"/>
+<junction x="-162.56" y="213.36"/>
+<junction x="-154.94" y="213.36"/>
+<junction x="-147.32" y="213.36"/>
+<junction x="-139.7" y="213.36"/>
+<junction x="-132.08" y="213.36"/>
+<junction x="-124.46" y="213.36"/>
+<junction x="-116.84" y="213.36"/>
+<junction x="-109.22" y="213.36"/>
+<junction x="-200.66" y="213.36"/>
+<pinref part="SIM900" gate="GND@6" pin="GND"/>
+<pinref part="SIM900" gate="GND@7" pin="GND"/>
+<pinref part="SIM900" gate="GND@8" pin="GND"/>
+<pinref part="SIM900" gate="GND@9" pin="GND"/>
+<pinref part="SIM900" gate="GND@10" pin="GND"/>
+<pinref part="SIM900" gate="GND@11" pin="GND"/>
+<pinref part="SIM900" gate="GND@12" pin="GND"/>
+<pinref part="SIM900" gate="GND@13" pin="GND"/>
+<pinref part="SIM900" gate="GND@14" pin="GND"/>
+<pinref part="SIM900" gate="GND@15" pin="GND"/>
+<pinref part="SIM900" gate="GND@1" pin="GND"/>
+<pinref part="SIM900" gate="GND@2" pin="GND"/>
+<pinref part="SIM900" gate="GND@3" pin="GND"/>
+<pinref part="SIM900" gate="GND@5" pin="GND"/>
+<pinref part="SIM900" gate="GND@4" pin="GND"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+</segment>
+<segment>
+<wire x1="149.86" y1="144.78" x2="203.2" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="144.78" x2="203.2" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<wire x1="104.14" y1="99.06" x2="104.14" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<pinref part="U1" gate="G$1" pin="5"/>
+</segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="2"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="104.14" y1="154.94" x2="104.14" y2="152.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="111.76" y1="99.06" x2="111.76" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="2"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="EX1" gate="1" pin="1"/>
+<wire x1="-106.68" y1="-7.62" x2="-99.06" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-99.06" y1="-7.62" x2="-99.06" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="GND82" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="EX2" gate="1" pin="1"/>
+<wire x1="-157.48" y1="-7.62" x2="-149.86" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-149.86" y1="-7.62" x2="-149.86" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="EX2" gate="1" pin="2"/>
+<wire x1="-157.48" y1="-5.08" x2="-149.86" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="-149.86" y1="-5.08" x2="-149.86" y2="-7.62" width="0.1524" layer="91"/>
+<junction x="-149.86" y="-7.62"/>
+<pinref part="GND83" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND2" gate="1" pin="GND"/>
+<pinref part="J$1" gate="1" pin="GND@3"/>
+<wire x1="-127" y1="172.72" x2="-127" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="-127" y1="175.26" x2="-121.92" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="J$1" gate="1" pin="GND@2"/>
+<wire x1="-121.92" y1="177.8" x2="-127" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="-127" y1="177.8" x2="-127" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="J$1" gate="1" pin="GND@1"/>
+<wire x1="-121.92" y1="180.34" x2="-127" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="-127" y1="180.34" x2="-127" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="J$1" gate="1" pin="GND@0"/>
+<wire x1="-121.92" y1="182.88" x2="-127" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="-127" y1="182.88" x2="-127" y2="180.34" width="0.1524" layer="91"/>
+<junction x="-127" y="180.34"/>
+<junction x="-127" y="177.8"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="-187.96" y1="-20.32" x2="-187.96" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
